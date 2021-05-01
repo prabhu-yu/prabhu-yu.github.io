@@ -1,0 +1,13 @@
+Info: Backing up file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\sym-lib-table” to file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\rescue-backup\sym-lib-table-2019-10-02-06-47-07”.
+Info: Backing up file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\PROJECT.sch” to file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\rescue-backup\PROJECT-2019-10-02-06-47-07.sch”.
+Info: Backing up file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\PROJECT.pro” to file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\rescue-backup\PROJECT-2019-10-02-06-47-07.pro”.
+Info: Backing up file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\PROJECT-cache.lib” to file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\rescue-backup\PROJECT-cache-2019-10-02-06-47-07.lib”.
+Info: Backing up file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\PROJECT-rescue.lib” to file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\rescue-backup\PROJECT-rescue-2019-10-02-06-47-07.lib”.
+Info: Backing up file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\PROJECT-rescue.dcm” to file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\breakout\jtag\rescue-backup\PROJECT-rescue-2019-10-02-06-47-07.dcm”.
+Info: Adding library “PROJECT-rescue”, file “${KIPRJMOD}/PROJECT-rescue.lib” to project symbol library table.
+Info: Adding library “SYMBOLS”, file “C:\Users\prabhu\Desktop\git\git-pcb\megha1\pcb\library\lib-sch\SYMBOLS.lib” to project symbol library table.
+Symbol “Conn_01x05” mapped to symbol library “PROJECT-rescue”.
+Symbol “JTAG” mapped to symbol library “SYMBOLS”.
+Symbol “R-RESCUE-PROJECT” mapped to symbol library “PROJECT-rescue”.
+Symbol “R-RESCUE-PROJECT” mapped to symbol library “PROJECT-rescue”.
+Info: Symbol library table mapping complete!
