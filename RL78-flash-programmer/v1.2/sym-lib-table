@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name renesas-prog-rescue)(type Legacy)(uri ${KIPRJMOD}/renesas-prog-rescue.lib)(options "")(descr ""))
+)
