@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Prabhu's Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type = "text/javascript" src = "scripts/main.js" ></script>
+    </head>
+    <body onload="on_load_home('nav-item-contact-me')">
+        <header class="group-style">
+                <h1 class='header-font'>
+                    <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
+                </h1>
+            <nav>
+                <ul class="nav-container">
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-home' href='./index.html'>Home</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-articles' href='./articles.html'>Articles</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-projects' href='./projects.html'>Projects</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-resume' href='./resume.html'>Resume</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-contact-me' href='./contact-me.html'>Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="group-style">
+            <p>
+                email id : PRABHU.YU@OUTLOOK.COM<br>
+                Mobile   : +91-8792796008<br>
+                Web      : <a href='https://prabhu-ullagaddi.gitlab.io/'>https://prabhu-ullagaddi.gitlab.io/</a><br>
+            </p>
+            <article>
+                <p>
+                    You can reach me with or without your contact details.<br>
+                    Use  the following form.<br>
+                    <p><label for="name">Name:</label> <input type="text" id="name" name="name"></p>
+                    <p><label for="message">Message:</label>  <input type="text" id="message" name="message"></p>
+                    <p><button type="button" onclick="send_feedback()">Send</button><p>
+                </p>
+            </article>
+        </main>
+
+        <footer class="group-style">
+        </footer>
+    </body>
+</html>

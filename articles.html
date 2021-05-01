@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       <title>Prabhu's Home Page</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+       <link rel="stylesheet" href="styles/styles.css">
+       <script type = "text/javascript" src = "scripts/main.js" ></script>
+    </head>
+    <body onload="on_load_home('nav-item-articles')">
+        <header class="group-style">
+                <h1 class='header-font'>
+                    <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
+                </h1>
+            <nav>
+                <ul class="nav-container">
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-home' href='./index.html'>Home</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-articles' href='./articles.html'>Articles</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-projects' href='./projects.html'>Projects</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-resume' href='./resume.html'>Resume</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-contact-me' href='./contact-me.html'>Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="group-style">
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li> Software Design & Development
+                        <ol>
+                            <li> <a class='anchor-hover' href='#scripting'> Scripting Language : For Significant Productivity </a></li>
+                            <li> <a class='anchor-hover' href='#dynamic-type'> Dynamic Typing: For Software Simplicity </a></li>
+                            <li> <a class='anchor-hover' href='#co-routines'> Co-routines : Think before choosing Threads </a></li>
+                            <li> <a class='anchor-hover' href='#con-current'> Con-current computing : Think before choosing Parallel Computing </a> </li>
+                            <li> <a class='anchor-hover' href='#kafka'> Kafka Pub-Sub : Simple, powerful, fault tolerant </a>  </li>
+                            <li> <a class='anchor-hover' href='#kafka'> Quality : Who owns the responsibility - Developer or Tester? </a> </li>
+                        </ol>
+                    </li>
+
+                    <li> Virtualization with Linux OS
+                        <ol>
+                            <li> <a class='anchor-hover' href='#virtual-box'> Virtual Box : A zero cost Linux Lab </a></li>
+                            <li> <a class='anchor-hover' href='#linux-name-space'> Linux Name Space : Think before you choose Docker </a></li>
+                            <li> <a class='anchor-hover' href='#time-virtualization'> Time Virtualization Using LD_PRELOAD </a>  </li>
+                        </ol>
+                    </li>
+
+                    <li> Web Development : Simple Yet Powerful Way of doing.
+                        <ol>
+                            <li> <a class='anchor-hover' href='#static-website'> Static Websites : Think before you choose Dynamic website</a></li>
+                        </ol>
+                    </li>
+
+                    <li> Tools I use during every day programming
+                        <ol>
+                            <li> <a class='anchor-hover' href='#pexpect'> Pexpect : Ultimate Automation of processes </a>       </li>
+                            <li> <a class='anchor-hover' href='#gvim'> gvim rc file </a>       </li>
+                            <li> <a class='anchor-hover' href='#python-tools'> Python Tools </a>      </li>
+                            <li> <a class='anchor-hover' href='#git'> git : Cheat Sheet </a> </li>
+                            <li> <a class='anchor-hover' href='#sed'> sed : Cheat Sheet </a> </li>
+                            <li> <a class='anchor-hover' href='#awk'> awk : Cheat Sheet </a> </li>
+                            <li> <a class='anchor-hover' href='#python'> Python : Cheat Sheet </a> </li>
+                        </ol>
+                    </li>
+
+                    <li>Embedded Articles
+                        <ol>
+                            <li> <a class='anchor-hover' href='#rl78-programmer'> Renesas RL78 MicroController Programmer Circuit Project</a></li>
+                            <li> <a class='anchor-hover' href='#pico-mcu'> Raspberry pi pico micro controller : ADC & Relay interfacing</a>    </li>
+                            <li> <a class='anchor-hover' href='#raspberry-ppc'> Raspberry pi Linux SBC : enabling PPP for 3G modem </a>     </li>
+                            <li> <a class='anchor-hover' href='#rl78-mcu'> Renesas RL78 MicroController : Why it is best in its class? </a>       </li>
+                            <li> <a class='anchor-hover' href='#scons'> scons: Best alternative to Make </a> </li>
+                            <li> <a class='anchor-hover' href='#windows-shortcuts'> Windows shortcuts </a> </li>
+                        </ol>
+                    </li>
+
+                    <li>Hardware Articles
+                        <ol>
+                            <li> <a class='anchor-hover' href='#kicad'> KiCAD : An Industrial Grade PCB Design Tool </a></li>
+                        </ol>
+                    </li>
+
+                    <li>Regular Expressions
+                        <ol>
+                            <li> <a class='anchor-hover' href='#regular-expressions'> Regular Expression : Cheat Sheet </a> </li>
+                            <li> <a class='anchor-hover' href='#english-grammer-re'> English Grammar Through Regular Expressions</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+
+            <section >
+                <ol class="group-style">
+                    <li class="group-style">
+                        <article id='scripting'>
+                            <p>
+                                https://www.tcl.tk/doc/scripting.html
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class="group-style">
+                        <article>
+                            <p>ss</p>
+                        </article>
+                    </li>
+
+                    <li class="group-style">
+                        <article id='git'>
+                            <p> git is an essential SW for any developer.
+
+                                Some command I use frequently are below.<br>
+                                git config --list
+                                git config --global user.email "xyz@gmail.com" # the email reg with git-lab. <br>
+                                git config --global user.name "abcd" # your git-lab user ID, not the mail id...<br>
+
+                                How to add the SSH pub keys to Git Server?<br>
+                                Adding so will enable us to avoid typing username/passwd every time from our machine.<br>
+
+                                .gitingore file: Here, I list the files which we don't want to be part of git. For example: generally, we dont want the bin, exe, intermediate, cached files as part of the git. so, I typically add the following to .gotingore and keep that file at the main directory of the git repo.<br>
+                                *.swp <br>
+                                *.swo <br>
+                                *~* <br>
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class='group-style'>
+                        <article id='visual-studio-code'>
+                            <p>
+                                visual-studio-code <br>
+                                Some settings I use listed below<br>
+                                <ul>
+                                    <li>
+                                        Word wrap : Goto the Gear Wheel Icon -> Setting -> enter "word wrap", you will get 'Editor: word wrap', in that, choose 'on' and press enter. now onword, all lines will be wrapped at end of the horizontal screen
+                                    </li>
+                                    <li>
+                                        How to remove the file previewer since that eats up some desktop screen space<br>
+                                        Go to Left bottom Gear symbol -> Settings -> Text Editor (Expand it) -> Minimap -> UnCheck the Enabled<br>
+                                    </li>
+                                </ul>
+                            </p>
+                        </article>
+                    </li>
+
+                    <!--
+                    <li>
+                        <article id='ddd'>
+                            <p>
+                                Embedded SW Development Basics
+                                Using UART debug console
+                                Intfacing a LED
+                                Intfacing a Relay
+                                Intfacing a i2C/SPI RTC Chip
+                                Intfacing a i2C/SPI eeprom Chip
+                                using/build a Linear voltage source
+                                using a switch mode voltage source
+                                A2D interface and digitising a sine wave
+                                LCD interface
+                                push button interface and button debouncing
+                                Multimeter as a powerful debugging tool
+                                How to read Device Datasheets
+                                How to understand PCB schematics
+                                How to understand the timing Diagrams
+                                understanding GPIO
+                                using GIT - a free and open source distributed version control system
+                                C pointers, memory models - These are extensivly covered so that you can face interviews with confidence.
+                                IOT - internet of thing from a raspberry perspective
+                                What is a protocol/bus analyser?
+                                Using an IDE to develop software
+                                How to use Peripheral Driver api to quickly build an application
+                                What is cross compiler
+                                Virtualisation : using Virtual Box to run Linux OS on Windows
+                                using gcc tool chain
+                                using an IDE or gvim
+                                <br>
+                                C Interview Questions
+
+                                implement memcpy, strcpy, strlen
+                                global vs static vs auto variables
+                                IPC: shared memory, semaphores, msg Q
+                                basic sort/merge alagorithms - write a C program
+                                basic binary trees -write a C program
+                                singly and doubly linked list
+                                setting a bit on/off in a word
+                                checking if a bit is on/off in a word
+                                swapping a nibble
+                                find if a machine is big endian or little endian using a programm
+                                stack vs heap
+                                how do you know how much memory (heap, stack) a process is consuming: hint-> ps cmd
+                                basic tcp/udp socket programming
+                                what is pub-sub: try learning kafka pub-sub
+                                What is secure programming - think on SSL sockets, study OpenSSL, FIPS standard
+                                what is a RTOS; how RTOS is different from desktop/server Windows/Linux?
+                                how much ur familiary with debugging on typical Linux m/c(like Ubuntu)
+                                what are the iot protocol u know - hint -? MQTT
+                                large scale, fault tolerant, distributed pub-sub - Apache KAFKA
+                                how mmap work? how it attaches some physical memory to VM of a process
+                                Suggested learning
+
+                                For any Software enginner, it is always profitable to learn these two languages
+                                JavaScript (with html/css)
+                                Python
+                            </p>
+                        </article>
+                    </li>
+                    -->
+
+                    <li class='group-style'>
+                        <article id='windows-short'>
+                            <p>
+                                Windows Shortcuts<br>
+                                <ul>
+                                    <li>
+                                        To take snip of screen - screen Shot : Press and hold windows key + Shift + s
+                                    </li>
+                                    <li>
+                                        To add emoji from your keyboard : Windows logo key + period (.) Note: this period is not from NumPad
+                                    </li>
+                                    <li>
+                                        To open File Explorer quickly : Press and hold windows logo key + E
+                                    </li>
+                                    <li>
+                                        To get to your desktop quickly : Press and hold Windows logo key + D
+                                    </li>
+                                    <li>
+                                        To Open settings : Press and hold windows logo key + I
+                                    </li>
+                                    <li>
+                                        To Cut or copy or paste: Ctrl + C , Ctrl + X, Ctrl + V
+                                    </li>
+                                    <li>
+                                        To Switch between open windows : Alt + keep pressing Tab
+                                    </li>
+                                    <li>
+                                        To add a touch keyboard short cut
+                                    </li>
+                                </ul>
+
+
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class='group-style'>
+                        <article id='ddd'>
+                            <p>
+                                numbertext-libre-office<br>
+                                Often, I want to convert the Number in LibreCalc into Words. Ex: if a cell contains 45 as a number, I want it to be shown as "Fourty five" in another cell. This typically needed when you want to write the Currency in Words. For this, simply use some thing as below.<br>
+                                ="Amount (in words) Rupees " &NUMBERTEXT(G20)&" only"<br>
+                                It automatically get converted to ="Amount (in words) Rupees " &org.numbertext.numbertext(G21)&" only"<br>
+                                I am not sure If this is built in or I should install following libre Office extention<br>
+                                https://extensions.libreoffice.org/en/extensions/show/numbertext-1<br>
+                                https://numbertext.github.io/<br>
+                                Above formul converts the number in the G20 cell into words in the cell under question.<br>
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class='group-style'>
+                        <article id='static-website'>
+                            <p>What is a Static WebPage/Website? <br>
+                                Generally, Static webPage are compared with Dynamic WebPage/Website.<br>
+                                All static websites can be as dynamic as any Dynamic website, but it uses, the client site Javascript.
+                                Before we understand, what it is, let us see why we need it. <br>
+                                It is almost functional equivalent of Dynamic web page, and comes with these too.<br>
+                                - Extra ordinarily Simple <br>
+                                - implicitly Secure <br>
+                                - Highly economical (almost you need no money to setup) <br>
+                                - Fast <br>
+                                - Nearly resistant to attacks like DoS or DDoS <br>
+                                - As dynamic as any other Dynamic webpage or website. <br>
+                                - You never need a expert to setup and manage it. <br>
+
+                                If all the pages are served statically, such webpage is called webpage.
+                                If all pages served by a website are static webpages, then whole website may be called static website <br>
+
+                                How this matter? <br>
+                                We can write all files for our website once and serve them  to users as they are. <br>
+                                We still need a server, but its job is just to hand over the files, as they are. <br>
+                                thus, server job is similar to that of file hosting server or CDN. <br>
+
+                                Oh, I need dynamic content in my website ...  <br>
+                                Yes, that is totally possible. <br>
+                                How? we can use JAvascript at client side to provide dynamic feature. <br>
+                                It is a very old concept but getting mainstream attention. <br>
+                                Static websites are offer same functionality as that of Dynamic websites, yet, they (=static website) are far simpler, secure, safe, easy to manage, does not require very sophisticated knowledge to develop and maintain. Very first question that comes to mind is , how come static website can offer the dynamic nature of a web page. Answer is simple and well known : everything is handled at client side using JavaScript. The client script will directly talks to amy needed server instead of a dedicated webserver. Infact, in the static website, the web-server will serve the static pages only. Nothing else. No code runs on it. It is like file server. that is all. Any database, will run at a server. the client java script will communicate to it (certainly, by autheticating) Then does what ever it wants. If see properly, there is no fixed web technologies you need to follow as in Flask, Django etc. It is upto developer to do what is best. <br>
+                                Reference: https://www.internetingishard.com/html-and-css <br>
+                                https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/ <br>
+
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class='group-style'>
+                        <article id='pexpect'>
+                            <p>pexpect is a wounderful tool to automate any console based processes.</p>
+                        </article>
+                    </li>
+
+                    <li class='group-style'>
+                        <article id='time_virt'>
+                            <p>
+                                LD_PRELOAD is a technique to tell the shared lib loader search our own shared lib first for any symbols (function/variables). We can use this fecility to call our own defined functions in the place of standard shared lib (libc).<br>
+                                We can even further write a wrapper functions for share lib functions. i.e., We can call libc function from our function...<br>
+                                <br>
+                                1.Python: Most useful features/commands<br>
+                                1.Installing Python VENV<br>
+                                #sudo  apt edit-sources # do this only if below cmds failed... u need to comment very first line that this cmd opens..using #<br>
+                                sudo apt upgrade    sudo apt update<br>
+                                sudo apt-get install libpython3.8-stdlib/focal<br>
+                                sudo apt-get install python3.8<br>
+                                sudo apt-get install python3-dev<br>
+                                #sudo apt-get install ubuntu-desktop<br>
+                                #sudo apt-get update<br>
+                                #sudo apt-get install firefox<br>
+                                #sudo apt-get install polychromatic<br>
+                                sudo apt-get install python3-venv<br>
+                                python3 -m venv ~/py-venv # path where py-venv to be insalled<br>
+                                Activating and deactivating venv<br>
+                                . py-venv/bin/activate # to activate<br>
+                                deactivate # to deactivate<br>
+                            </p>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+
+            <table>
+                <tr>
+                    <th>column Header1</th>
+                    <th>columan Header2</th>
+                </tr>
+                <tr>
+                    <td>C11</td>
+                    <td>C12</td>
+                </tr>
+                <tr>
+                    <td>C21</td>
+                    <td>C22</td>
+                </tr>
+            </table>
+
+        </main>
+
+        <footer>
+            <p> CopyRight 2999 by Nobody!!! No Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

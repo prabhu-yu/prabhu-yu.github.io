@@ -1,0 +1,78 @@
+/* TODO
+Cache Enable instructions.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.zero-margin-padding {
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.group-style {
+    /* background: powderblue; */
+    background: white;
+    margin  : 0em .5em .5em .5em;
+    padding : 0em .5em 0em .5em;
+    border: 1px solid black;
+    border-radius: .5em;
+
+}
+
+.nav-container {
+    /*background-color: red;*/
+    /*padding: 1em;*/
+    margin: 0em 0em .0em 0em;
+    padding : .0em .0em .0em .0em;
+    border: 3px solid blue; border-radius: .5em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*box-sizing: content-box;*/
+    text-align: center;
+
+}
+
+.nav-item {
+    /*font-weight: bold;*/
+    margin  : .5em 0.5em .5em .5em;
+    /*padding : 0em; */
+    text-align: center;
+    /*border: 3px solid red;*/
+    border-radius: .5em;
+    /*box-sizing: border-box;*/
+    list-style-type: none;
+}
+
+.nav-item-anchor {
+    font-weight: bold;
+    /*margin  : 0em 0em 0em 0em;*/
+    padding : 0.5em;
+    /*text-align: center; */
+    border: 1px solid blue;
+    border-radius: .5em;
+    display: inline-block
+}
+
+.anchor-hover:hover {
+    background-color: pink;
+    /* font-weight: bold; */
+}
+
+.header-font {
+    font-size: 1em;
+}
+/*
+h1 {
+    font-size: 3em;
+}*/
+
+table, th, td {
+    border: 1px solid black;
+	border-collapse: collapse;
+}
