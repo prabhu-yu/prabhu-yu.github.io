@@ -1,34 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-       <title>Prabhu's Home Page</title>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="styles/styles.css">
+        <meta charset="utf-8">
+        <title>Prabhu's Home Page</title>
+
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+
+        <!--script type = "text/javascript" src = "main.js" defer></script-->
+        <script type="module" src="./scripts/main.js"></script>
+
     </head>
     <body>
         <header class="group-style">
-                <h1 class="header-font">
+                <h1 class='header-font'>
                     <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
                 </h1>
             <nav>
                 <ul class="nav-container">
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav_item_index' href='./index.html'>Home</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav_item_index' href='./articles.html'>Articles</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav_item_index' href='./projects.html'>Projects</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./resume.html'>Resume</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./contact-me.html'>Contact Me</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-home' href='./index.html'>Home</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-articles' href='./articles.html'>Articles</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-projects' href='./projects.html'>Projects</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-resume' href='./resume.html'>Resume</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-contact-me' href='./contact-me.html'>Contact Me</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="group-style">
             <p>
-                Under Construction.
+                My Linkedin Page-: <a href="https://www.linkedin.com/in/prabhu-ullagaddi-01a48aa1/">https://www.linkedin.com/in/prabhu-ullagaddi-01a48aa1/</a><br>
+            </p>
+            <p>
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>OS</td>
+                        <td>Linux</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>C, Python</td>
+                    </tr>
+                    <tr>
+                        <td>Tools</td>
+                        <td>gcc cross compilers, arm-gcc, RL-CC, SDCC</td>
+                    </tr>
+                    <tr>
+                        <td>Application Programming</td>
+                        <td>POSIX, Async Programming, Threads, Co-routines, Web server scripts, HTML, CSS, JavaScript, Tcl</td>
+                    </tr>
+                    <tr>
+                        <td>Inter Process Communication</td>
+                        <td>Unix IPC, Sockets, gRPC, Kafka, Google Realtime DB</td>
+                    </tr>
+
+                    <tr>
+                        <td>Security</td>
+                        <td>OpenSSL crypto lib., X509 Certificates, usage of symmetric & asymmetric cipher API</td>
+                    </tr>
+
+                    <tr>
+                        <td>Virtualization</td>
+                        <td>Oracle VirtualBox, Linux NameSpaces, Containers </td>
+                    </tr>
+
+                    <tr>
+                        <td>Embedded Programmer</td>
+                        <td>SWD, JTAG, Renesas Flash GUI, </td>
+                    </tr>
+
+                    <tr>
+                        <td>Micro Controller</td>
+                        <td>Renesas RL78, NXP arm-m0+ Kinetis, Raspberry Pi Pico mcu </td>
+                    </tr>
+
+                    <tr>
+                        <td>Optical Transport Standard</td>
+                        <td>SONET GR253, OTN G709</td>
+                    </tr>
+
+                    <tr>
+                        <td>PCB Design/Schematic</td>
+                        <td>KiCAD, PADS</td>
+                    </tr>
+                    <tr>
+                        <td>Embedded Programming</td>
+                        <td>AT Commands, ADC, DAC, SPI, I2C, UART</td>
+                    </tr>
+
+                    <tr>
+                        <td>IoT</td>
+                        <td>Raspberry Pi, AT Modem, MQTT</td>
+                    </tr>
+
+                    <tr>
+                        <td>Database</td>
+                        <td>Sqlite3</td>
+                    </tr>
+
+                    <tr>
+                        <td>IDE</td>
+                        <td>Visual Studio Code, Renesas e2 Studio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Terminal Emulators</td>
+                        <td>CoolTerm, Brey Terminal, Putty</td>
+                    </tr>
+
+                    <tr>
+                        <td>CAD</td>
+                        <td>SolidWorks Sheet Metal Design, Solid modelling, </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
             </p>
         </main>
-
         <footer class="group-style">
 
         </footer>

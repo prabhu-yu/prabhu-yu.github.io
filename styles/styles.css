@@ -21,7 +21,6 @@ body {
     padding : 0em .5em 0em .5em;
     border: 1px solid black;
     border-radius: .5em;
-
 }
 
 .nav-container {
@@ -29,7 +28,7 @@ body {
     /*padding: 1em;*/
     margin: 0em 0em .0em 0em;
     padding : .0em .0em .0em .0em;
-    border: 3px solid blue; border-radius: .5em;
+    /* border: 3px solid blue; border-radius: .5em; */
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -60,17 +59,13 @@ body {
 }
 
 .anchor-hover:hover {
-    background-color: pink;
-    /* font-weight: bold; */
+    background-color: yellowgreen;
+    /*font-weight: bold;*/
 }
 
 .header-font {
     font-size: 1em;
 }
-/*
-h1 {
-    font-size: 3em;
-}*/
 
 table, th, td {
     border: 1px solid black;

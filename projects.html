@@ -1,37 +1,69 @@
-<!DOCTYPE html>
-<html>
+﻿<html lang="en">
     <head>
-       <title>Prabhu's Home Page</title>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="styles/styles.css">
+        <meta charset="utf-8"/>
+        <title>Prabhu's Home Page</title>
+
+        <meta http-equiv="cache-control" content="no-cache"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="-1"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="styles/styles.css"/>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+
+        <!--script type = &amp;quot;text/javascript&amp;quot; src = &amp;quot;main.js&amp;quot; defer&amp;gt;&amp;lt;/script-->
+        <script type="module" src="./scripts/main.js"></script>
+
     </head>
     <body>
         <header class="group-style">
                 <h1 class="header-font">
-                    <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
+                    <a href="https://prabhu-ullagaddi.gitlab.io/">Home Page of Prabhu Ullagaddi</a>
                 </h1>
             <nav>
                 <ul class="nav-container">
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./index.html'>Home</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./articles.html'>Articles</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./projects.html'>Projects</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./resume.html'>Resume</a></li>
-                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" href='./contact-me.html'>Contact Me</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id="nav-item-home" href="./index.html">Home</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id="nav-item-articles" href="./articles.html">Articles</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id="nav-item-projects" href="./projects.html">Projects</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id="nav-item-resume" href="./resume.html">Resume</a></li>
+                    <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id="nav-item-contact-me" href="./contact-me.html">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="group-style">
             <p>
-                Under Construction.
+                Please visit my GitHub project page at the following link.
+                <ol>
+                    <li>
+                        RL 78 micro controller Flash programmer Schematic and PCB  Design Files in KiCAD.
+                        <a href="https://github.com/prabhu-yu/prabhu-yu.github.io/tree/main/RL78-flash-programmer">
+                            <br/>https://github.com/prabhu-yu/prabhu-yu.github.io/tree/main/RL78-flash-programmer
+                        </a>
+                    </li>
+
+                    <li>
+                        A small Python program to estimate the time to extract a password from PDF files.(If this guesses your password, means, you should change the password). This program should give an idea on how big should be the keys for your PDF files so that program will fail to predict it.
+                        <br>
+                        <a href="https://github.com/prabhu-yu/prabhu-yu.github.io/tree/main/password-extract">https://github.com/prabhu-yu/prabhu-yu.github.io/tree/main/password-extract</a>
+
+                    </li>
+                </ol>
+
+
             </p>
-            <article>
-            </article>
+            <p>
+
+            </p>
+
         </main>
 
-        <footer class="group-style">
-        </footer>
+        <footer class="group-style"></footer>
     </body>
 </html>

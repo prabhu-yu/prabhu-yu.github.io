@@ -2,13 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-       <title>Prabhu's Home Page</title>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="styles/styles.css">
-       <script type = "text/javascript" src = "scripts/main.js" ></script>
+        <title>Prabhu's Home Page</title>
+
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+
+        <!--script type = "text/javascript" src = "main.js" defer></script-->
+        <script type="module" src="./scripts/main.js"></script>
+
     </head>
-    <body onload="on_load_home('nav-item-articles')">
+    <body>
         <header class="group-style">
                 <h1 class='header-font'>
                     <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
@@ -24,70 +38,74 @@
             </nav>
         </header>
 
-
         <main>
             <section class="group-style">
+                <h2>This page is under construction.</h2>
                 <h2>Table of Contents</h2>
                 <ol>
                     <li> Software Design & Development
                         <ol>
                             <li> <a class='anchor-hover' href='#scripting'> Scripting Language : For Significant Productivity </a></li>
-                            <li> <a class='anchor-hover' href='#dynamic-type'> Dynamic Typing: For Software Simplicity </a></li>
-                            <li> <a class='anchor-hover' href='#co-routines'> Co-routines : Think before choosing Threads </a></li>
-                            <li> <a class='anchor-hover' href='#con-current'> Con-current computing : Think before choosing Parallel Computing </a> </li>
-                            <li> <a class='anchor-hover' href='#kafka'> Kafka Pub-Sub : Simple, powerful, fault tolerant </a>  </li>
-                            <li> <a class='anchor-hover' href='#kafka'> Quality : Who owns the responsibility - Developer or Tester? </a> </li>
+                            <li> <a class='anchor-hover' href='#dynamic-type'> The rise of Dynamic Typing over Static Typing:TODO</TODO> </a></li>
+                            <li> <a class='anchor-hover' href='#co-routines'> The rise of Co-routines over P-Threads:TODO </a></li>
+                            <li> <a class='anchor-hover' href='#con-current'> The rise of Con-current computing over Parallel Computing TODO </a> </li>
+                            <li> <a class='anchor-hover' href='#kafka'> Kafka Pub-sub over IPC/RPC/other messaging passing methods TODO</a>  </li>
+                            <li> <a class='anchor-hover' href='#sw-quality'> SW Quality : Who owns it - Developers or Testers? TODO</a> </li>
                         </ol>
                     </li>
 
                     <li> Virtualization with Linux OS
                         <ol>
-                            <li> <a class='anchor-hover' href='#virtual-box'> Virtual Box : A zero cost Linux Lab </a></li>
-                            <li> <a class='anchor-hover' href='#linux-name-space'> Linux Name Space : Think before you choose Docker </a></li>
+                            <li> <a class='anchor-hover' href='#virtual-box'> Virtual Box: Linux on Windows ( TODO ) </a></li>
+                            <li> <a class='anchor-hover' href='#linux-name-space'> Linux Name Space : Think before you choose Docker/Containers ( TODO ) </a></li>
                             <li> <a class='anchor-hover' href='#time-virtualization'> Time Virtualization Using LD_PRELOAD </a>  </li>
-                        </ol>
-                    </li>
-
-                    <li> Web Development : Simple Yet Powerful Way of doing.
-                        <ol>
-                            <li> <a class='anchor-hover' href='#static-website'> Static Websites : Think before you choose Dynamic website</a></li>
-                        </ol>
-                    </li>
-
-                    <li> Tools I use during every day programming
-                        <ol>
-                            <li> <a class='anchor-hover' href='#pexpect'> Pexpect : Ultimate Automation of processes </a>       </li>
-                            <li> <a class='anchor-hover' href='#gvim'> gvim rc file </a>       </li>
-                            <li> <a class='anchor-hover' href='#python-tools'> Python Tools </a>      </li>
-                            <li> <a class='anchor-hover' href='#git'> git : Cheat Sheet </a> </li>
-                            <li> <a class='anchor-hover' href='#sed'> sed : Cheat Sheet </a> </li>
-                            <li> <a class='anchor-hover' href='#awk'> awk : Cheat Sheet </a> </li>
-                            <li> <a class='anchor-hover' href='#python'> Python : Cheat Sheet </a> </li>
                         </ol>
                     </li>
 
                     <li>Embedded Articles
                         <ol>
-                            <li> <a class='anchor-hover' href='#rl78-programmer'> Renesas RL78 MicroController Programmer Circuit Project</a></li>
-                            <li> <a class='anchor-hover' href='#pico-mcu'> Raspberry pi pico micro controller : ADC & Relay interfacing</a>    </li>
-                            <li> <a class='anchor-hover' href='#raspberry-ppc'> Raspberry pi Linux SBC : enabling PPP for 3G modem </a>     </li>
-                            <li> <a class='anchor-hover' href='#rl78-mcu'> Renesas RL78 MicroController : Why it is best in its class? </a>       </li>
-                            <li> <a class='anchor-hover' href='#scons'> scons: Best alternative to Make </a> </li>
-                            <li> <a class='anchor-hover' href='#windows-shortcuts'> Windows shortcuts </a> </li>
+                            <li> <a class='anchor-hover' href='#rl78_programmer'> Renesas RL78 MicroController Programmer Circuit Project</a></li>
+                            <li> <a class='anchor-hover' href='#pico-mcu'> Raspberry pi pico micro controller : ADC & Relay interfacing</a> TODO    </li>
+                            <li> <a class='anchor-hover' href='#raspberry-ppc'> Raspberry pi Linux SBC : enabling PPP for 3G modem </a>  TODO </li>
+                            <li> <a class='anchor-hover' href='#rl78-mcu'> Renesas RL78 MicroController : Why it is best in its class? </a>  TODO </li>
+                            <li> <a class='anchor-hover' href='#scons'> scons: Best alternative to Make </a>  TODO </li>
                         </ol>
                     </li>
 
                     <li>Hardware Articles
                         <ol>
-                            <li> <a class='anchor-hover' href='#kicad'> KiCAD : An Industrial Grade PCB Design Tool </a></li>
+                            <li> <a class='anchor-hover' href='#kicad'> KiCAD : An Industrial Grade PCB Design Tool </a> TODO </li>
+                        </ol>
+                    </li>
+
+                    <li> Web Development:
+                        <ol>
+                            <li> <a class='anchor-hover' href='#static-website'> Static Websites : Think before you choose Dynamic website</a></li>
+                        </ol>
+                    </li>
+
+                    <li> Some Tools & misc. stuff.
+                        <ol>
+                            <li> <a class='anchor-hover' href='#pexpect'> Pexpect : The Ultimate Automation</a></li>
+                            <li> <a class='anchor-hover' href='#gvim'> gvim rc file TODO </a>  </li>
+                            <li> <a class='anchor-hover' href='#python-tools'> Python Tools TODO </a>      </li>
+                            <li> <a class='anchor-hover' href='#git'> git : Cheat Sheet </a> </li>
+                            <li> <a class='anchor-hover' href='#sed'> sed : Cheat Sheet  TODO </a> </li>
+                            <li> <a class='anchor-hover' href='#awk'> awk : Cheat Sheet TODO </a> </li>
+                            <li> <a class='anchor-hover' href='#python'> Python : Cheat Sheet TODO </a> </li>
+                            <li> <a class='anchor-hover' href='#visual-studio-code'> Visual Studio Code </a> </li>
+                            <li> <a class='anchor-hover' href='#windows_shortcuts'> Windows shortcuts </a> </li>
                         </ol>
                     </li>
 
                     <li>Regular Expressions
                         <ol>
-                            <li> <a class='anchor-hover' href='#regular-expressions'> Regular Expression : Cheat Sheet </a> </li>
-                            <li> <a class='anchor-hover' href='#english-grammer-re'> English Grammar Through Regular Expressions</a></li>
+                            <li> <a class='anchor-hover' href='#regular-expressions'> Regular Expression : Cheat Sheet TODO </a> </li>
+                            <li> <a class='anchor-hover' href='#english-grammer-re'> English Grammar Through Regular Expressions TODO </a></li>
                         </ol>
+                    </li>
+                    <li>
+                        Place Holder.
                     </li>
                 </ol>
             </section>
@@ -97,33 +115,40 @@
                     <li class="group-style">
                         <article id='scripting'>
                             <p>
-                                https://www.tcl.tk/doc/scripting.html
+                                There are many reasons on why it helps significantly if an Embedded Software Developer studies scripting languages like Python/Javascript? <br>
+                                Scripting allows us to express more thoughts in less code. They manage a lot things like data typing, garbage collection, printing exact line upon runtime error etc at zero cost for us. They are mode for our (developers) productivity. In compiled language, you would modify code, <em>build</em> it and run it. This build state an time consuming, distracting. But in scripting language, there is not build stage, thus saving huge amount time. As said earlier, generally scripts uses dynamic typing (They are as strongly typed as C/C++). So, you are writing very less code for same feature compared to statically typed languages like C/C++/Java. I feel, type safety of compiled languages harmed us more than it helped us. To be more objective, if you write a 1 line of C code and another line of Python code, typically, you would be expressing 10 to 100 times more powerfully in python, because, to translate 1 line of python into machine code, it takes 10 to 100 time more machine codes than C. This is widely observed.
+                                <p>
+                                    Yes, I hear, they are not as fast as C/C++. And, don't forget, developers are also costly. Scripting languages provide function binding of C/C++. ie, we can call C++ function, in Python. Thus, the code that really needs to be optimized can be kept in C++, while rest of the code can be in Python. Today, cpu and RAM are cheap, but not the developers. We can compensate any slowness, if at all that matters by using a little faster CPU and little more CPU. That is very cheap. Give what your customers need. Majorly it is our quality product at competitive price is the need. For this, most of the time, scripting will help you (rather compiled language like C/C++/Java).
+                                </p>
+                                <p>
+                                    Growth of scripting languages is phenomenal. You can see it https://pypl.github.io/PYPL.html and https://www.tiobe.com/tiobe-index/
+                                </p>
+                                <p> I faced one issue with Python/Javascript: If you write code, it is available in plaint text to every one. you can't really protected your code. This is generally not an issue in compiled languages. People say, we can send the byte code but I yet to explore this.</p>
+                                <p>You want more technical analysis and <a class='anchor-hover' href='https://www.tcl.tk/doc/scripting.html' > there is document you can read it </a> </p>
                             </p>
                         </article>
                     </li>
 
                     <li class="group-style">
-                        <article>
-                            <p>ss</p>
-                        </article>
-                    </li>
-
-                    <li class="group-style">
                         <article id='git'>
-                            <p> git is an essential SW for any developer.
+                            <p> Git is an essential SW for any developer.
 
                                 Some command I use frequently are below.<br>
                                 git config --list
-                                git config --global user.email "xyz@gmail.com" # the email reg with git-lab. <br>
+                                git config --global user.email "user_name@outlook.com" # the email reg with git-lab. <br>
                                 git config --global user.name "abcd" # your git-lab user ID, not the mail id...<br>
 
                                 How to add the SSH pub keys to Git Server?<br>
                                 Adding so will enable us to avoid typing username/passwd every time from our machine.<br>
+                                Generate SSH keys on your work machines. Copy them to SSH setting on Git lab/GitHub server...
 
                                 .gitingore file: Here, I list the files which we don't want to be part of git. For example: generally, we dont want the bin, exe, intermediate, cached files as part of the git. so, I typically add the following to .gotingore and keep that file at the main directory of the git repo.<br>
                                 *.swp <br>
                                 *.swo <br>
                                 *~* <br>
+
+                                <br>
+                                Also, there is github repo that gives default .gitingore files for every language. Browse this: https://github.com/github/gitignore
                             </p>
                         </article>
                     </li>
@@ -138,7 +163,7 @@
                                         Word wrap : Goto the Gear Wheel Icon -> Setting -> enter "word wrap", you will get 'Editor: word wrap', in that, choose 'on' and press enter. now onword, all lines will be wrapped at end of the horizontal screen
                                     </li>
                                     <li>
-                                        How to remove the file previewer since that eats up some desktop screen space<br>
+                                        How to remove the file previewer/Minimap since that eats up some desktop screen space<br>
                                         Go to Left bottom Gear symbol -> Settings -> Text Editor (Expand it) -> Minimap -> UnCheck the Enabled<br>
                                     </li>
                                 </ul>
@@ -210,7 +235,7 @@
                     -->
 
                     <li class='group-style'>
-                        <article id='windows-short'>
+                        <article id='windows_shortcuts'>
                             <p>
                                 Windows Shortcuts<br>
                                 <ul>
@@ -302,6 +327,59 @@
                     </li>
 
                     <li class='group-style'>
+                        Assume, our working branch is feature/issue_55. And we made many commits & pushed to it.<br>
+                                Now, we are ready to merge this branch to master/main branch.<br>
+
+                                For this, first, we need to bring the master branch into out feature/issue_55. This is to enusre<br>
+                                that, if master has got new pushes after we branched earlier.<br>
+                                in that case, git will try to merge that changes automatically. if it can't, it throws the conflicts.<br>
+                                Manually resolve those changes. in any case, following commands should be used.<br>
+
+                                git checkout feature/issues_55<br>
+                                git merge master feature/issues_55 # last arg is optional. master --> feature.<br>
+                                If it gives merge conflicts, resolve them<br>
+                                git commit -am 'merged'<br>
+                                git push origin feature/issues_55<br>
+                    </li>
+
+                    <li class='group-style'>
+                                                <article id='zero-cpu'>
+                                                    <p>
+                                                        Modern CPUs are very complex beasts. I am trying to see, if we make them simple enough to be manufactured by
+                                                        by a 3rd world country, yet we can depend it for almost all computings. Let us give a try.
+                                                       
+                                                        Imagine an existing RISC cpu.
+                                                        Remove all caches.
+                                                        Remove all branch predictions or other speculative execution engines.
+                                                        Remove all pre fetching.
+                                                        Remove all kinds of complicated bus matix to CPU, just use direction connection to memory bus.
+
+
+                                                        We may be taking the CPU back to 50 yers, but please hold.
+                                                        Let us have 'c' logical cpu, directly connect to the off the shelf RAM
+                                                        Idea is, since it is too cheap to implement more cpu, then to speed up single cpu to higher clocks.
+                                                        And we have more threads in typical desktops (3000+ threads), yet, we generally have only 8 logical cpus in our desktops.
+
+                                                        So, even if we increase the single cpu speed, we have 99.9% of SW sittle idle.
+                                                        Instad of this, I want, to implement thousands of cpu, at the clock rate nearly equal to RAM speed and run thousands of threads in parallel.
+
+                                                        here, instead of running a thread at very high speed, we have thousands of threads running at low speed.
+
+                                                        At the end, we have nearly same performace.
+
+                                                        Idea is not to increase the CPU clock, but to bring it down to the level of memory.
+                                                        By this, we don't need to worry on idle CPU, but can have immune CPU.
+                                                        AT the same time, if we can have large number of simple CPU connected to standard ram, we enable parallisam.
+                                                       
+                                                        What are the cons of this.
+                                                        Obviously die size increases becos of thousands of slow cores. but we have made enoug room by removing other components.
+                                                        also, our clocks can be kept at constant speed, something like, run at full speed or stop them.
+                                                        Due to reduced clock speed, our problems are less.                            
+                                                    </p>
+                                                </article>
+                    </li>
+
+                    <li class='group-style'>
                         <article id='time_virt'>
                             <p>
                                 LD_PRELOAD is a technique to tell the shared lib loader search our own shared lib first for any symbols (function/variables). We can use this fecility to call our own defined functions in the place of standard shared lib (libc).<br>
@@ -326,9 +404,38 @@
                             </p>
                         </article>
                     </li>
+
+                    <li class='group-style'>
+                        <article id='time_virt'>
+                            <p>
+                                <ol>
+                                    <li> <a class='anchor-hover' href='#'></a>Linux/ Windows OS</li>
+                                    <li> <a class='anchor-hover' href='#'></a>gvim, VS Code</li>
+                                    <li> <a class='anchor-hover' href='#'></a>C/Python/JavaScript, node, deno</li>
+                                    <li> <a class='anchor-hover' href='#'></a>Micro controllers - Raspberry Pico, Renesas, ARM etc</li>
+                                    <li> <a class='anchor-hover' href='#'></a>Build tools: GCC cross tool chains </li>
+                                    <li> <a class='anchor-hover' href='#'></a>Libraries : OpenSSL, Kafka, Real Time Database </li>
+                                    <li> <a class='anchor-hover' href='#'></a> </li>
+                                    <li> <a class='anchor-hover' href='#'></a> </li>
+                                    <li> <a class='anchor-hover' href='#'></a> </li>
+                                    <li> <a class='anchor-hover' href='#'></a> </li>
+                                </ol>
+                            </p>
+                        </article>
+                    </li>
+
+                    <li class='group-style'>
+                        <article id='rl78_programmer'>
+                            <p> RL 78 MCU Flash programmer circuit & PCB design using KiCAD</p>
+                            <p>
+                                <a href="https://github.com/prabhu-yu/prabhu-yu.github.io/tree/main/RL78-flash-programmer"> My RL78 MCU Flash programmer Circuit GitHub Repo </a>
+                            </p>
+                        </article>
+                    </li>
+
                 </ol>
             </section>
-
+<!--
             <table>
                 <tr>
                     <th>column Header1</th>
@@ -343,11 +450,11 @@
                     <td>C22</td>
                 </tr>
             </table>
-
+-->
         </main>
 
         <footer>
-            <p> CopyRight 2999 by Nobody!!! No Rights Reserved.</p>
+            <p></p>
         </footer>
     </body>
 </html>

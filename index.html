@@ -3,16 +3,33 @@
     <head>
         <meta charset="utf-8">
         <title>Prabhu's Home Page</title>
+
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="styles/styles.css">
-        <script type = "text/javascript" src = "scripts/main.js" ></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+
+        <!--script type = "text/javascript" src = "main.js" defer></script-->
+        <script type="module" src="./scripts/main.js"></script>
+
     </head>
-    <body onload="on_load_home('nav-item-home')">
+    <body>
         <header class="group-style">
                 <h1 class='header-font'>
                     <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
                 </h1>
+                <!--div id="logo"><img src="/logo.png">HTML5&nbsp;Layout</div-->
             <nav>
                 <ul class="nav-container">
                     <li class="nav-item"> <a class="nav-item-anchor anchor-hover" id='nav-item-home' href='./index.html'>Home</a></li>
@@ -26,16 +43,18 @@
 
         <main class="group-style">
             <p>
-                I am a Software Developer.<br>
-                I have been working on the design/develop/maintenance of application/embedded software.<br>
-                I believe in developer's productivity & code simplicity for product/business/customer success<br>
-                For more, please navigate the site.<br>
+                I am a Firmware Developer.<br>
+                I have been workin on the design, develop, maintenance of application and embedded software.<br>
+                This is my home page to share & learn.<br>
+                Please navigate this site for more information.<br>
+                My contact details are in "Contact-me" Page.<br>
+
             </p>
             <article>
             </article>
         </main>
 
-        <footer class="group-style">
-        </footer>
+        <!--<footer class="group-style">
+        </footer>  -->
     </body>
 </html>

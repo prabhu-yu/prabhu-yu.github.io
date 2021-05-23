@@ -3,12 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Prabhu's Home Page</title>
+
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="styles/styles.css">
-        <script type = "text/javascript" src = "scripts/main.js" ></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+
+        <!--script type = "text/javascript" src = "main.js" defer></script-->
+        <script type="module" src="./scripts/main.js"></script>
+
     </head>
-    <body onload="on_load_home('nav-item-contact-me')">
+    <body>
         <header class="group-style">
                 <h1 class='header-font'>
                     <a href='https://prabhu-ullagaddi.gitlab.io/'>Home Page of Prabhu Ullagaddi</a>
@@ -25,20 +39,26 @@
         </header>
 
         <main class="group-style">
-            <p>
-                email id : PRABHU.YU@OUTLOOK.COM<br>
-                Mobile   : +91-8792796008<br>
-                Web      : <a href='https://prabhu-ullagaddi.gitlab.io/'>https://prabhu-ullagaddi.gitlab.io/</a><br>
+            My Contact details are below <br>
+            <p style="font-family:'Courier New'">
+                My Email---------: prabhu.yu@outlook.com<br>
+                My GitHub Repo---: <a href="https://github.com/prabhu-yu">https://github.com/prabhu-yu</a><br>
+                My GitLab Repo---: TODO<br>
+                My Linkedin Page-: <a href="https://www.linkedin.com/in/prabhu-ullagaddi-01a48aa1/">https://www.linkedin.com/in/prabhu-ullagaddi-01a48aa1/</a><br>
+                My GitHub Pages-: <a href="https://prabhu-yu.github.io/">https://prabhu-yu.github.io/</a>
             </p>
-            <article>
+        <!-- <article>
                 <p>
-                    You can reach me with or without your contact details.<br>
+                    You can reach me with following.<br>
                     Use  the following form.<br>
-                    <p><label for="name">Name:</label> <input type="text" id="name" name="name"></p>
-                    <p><label for="message">Message:</label>  <input type="text" id="message" name="message"></p>
-                    <p><button type="button" onclick="send_feedback()">Send</button><p>
+                    <p><label for="name">Your Name:</label> <input type="text" id="name" name="name"></p>
+                    <p><label for="email">Your Email:</label> <input type="text" id="email" name="email"></p>
+                    <p><label for="message">Your Message:</label></p>
+                    <textarea rows = "3" cols = "60" name = "description" id="message">
+                     </textarea>
+                    <p><button type="button" id="send_button_id">Send</button><p>
                 </p>
-            </article>
+            </article> -->
         </main>
 
         <footer class="group-style">
